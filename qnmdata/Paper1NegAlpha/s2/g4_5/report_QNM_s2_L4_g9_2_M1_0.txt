@@ -1,0 +1,58 @@
+QNM Analysis Report - 2025-05-08 21:46:04
+==============================================
+Parameters:
+  s = 2, L = 4, g = 9/2, M = 1
+  resolutions = [200  190  180]
+Job Name: QNM_s2_L4_g9_2_M1_0
+==============================================
+
+QNM Analysis Results:
+------------------------
+Common QNMs (found in all resolutions) within tolerance 0.0001:
+Found 26 physical modes (6 positive real part, 20 purely imaginary)
+Sorted by decreasing imaginary part
+
+Modes with positive real part:
+  Mode #1  : 0.647808-0.106892*I
+  Mode #2  : 0.614198-0.323154*I
+  Mode #3  : 0.547949-0.547438*I
+  Mode #4  : 0.452437-0.786351*I
+  Mode #5  : 0.334024-1.044795*I
+  Mode #6  : 0.198522-1.316526*I
+
+Purely imaginary modes:
+  Mode #7  :   -0.000410*I   Delta: 23.681530
+  Mode #8  :  -23.681941*I   Delta:  0.387827
+  Mode #9  :  -24.069767*I   Delta:  0.387591
+  Mode #10 :  -24.457358*I   Delta:  0.387741
+  Mode #11 :  -24.845099*I   Delta:  0.387660
+  Mode #12 :  -25.232759*I   Delta:  0.387702
+  Mode #13 :  -25.620461*I   Delta:  0.387695
+  Mode #14 :  -26.008156*I   Delta:  0.387685
+  Mode #15 :  -26.395841*I   Delta:  0.387714
+  Mode #16 :  -26.783555*I   Delta:  0.387681
+  Mode #17 :  -27.171236*I   Delta:  0.387722
+  Mode #18 :  -27.558957*I   Delta:  0.387687
+  Mode #19 :  -27.946644*I   Delta:  0.387718
+  Mode #20 :  -28.334362*I   Delta:  0.387704
+  Mode #21 :  -28.722066*I   Delta:  0.387706
+  Mode #22 :  -29.109772*I   Delta:  0.387723
+  Mode #23 :  -29.497494*I   Delta:  0.387700
+  Mode #24 :  -29.885195*I   Delta:  0.387725
+  Mode #25 :  -30.272919*I   Delta:  0.775424
+  Mode #26 :  -31.048343*I   Delta:       N/A
+
+Note: 32 total common QNMs found (including negative real part counterparts)
+
+Instability Analysis:
+------------------------
+No instabilities (Im(ω) >= 0.0001) have been detected.
+
+Summary:
+------------------------
+- Found 32 total QNMs
+- 26 physical modes (6 positive real, 20 purely imaginary)
+- No instabilities (Im(ω) >= 0.0001) found
+
+End of Report
+==============================================

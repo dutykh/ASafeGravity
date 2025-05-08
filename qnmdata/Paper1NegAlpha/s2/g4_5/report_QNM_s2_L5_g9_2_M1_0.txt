@@ -1,0 +1,59 @@
+QNM Analysis Report - 2025-05-08 21:53:07
+==============================================
+Parameters:
+  s = 2, L = 5, g = 9/2, M = 1
+  resolutions = [200  190  180]
+Job Name: QNM_s2_L5_g9_2_M1_0
+==============================================
+
+QNM Analysis Results:
+------------------------
+Common QNMs (found in all resolutions) within tolerance 0.0001:
+Found 27 physical modes (8 positive real part, 19 purely imaginary)
+Sorted by decreasing imaginary part
+
+Modes with positive real part:
+  Mode #1  : 0.816776-0.107379*I
+  Mode #2  : 0.790781-0.323885*I
+  Mode #3  : 0.739350-0.545899*I
+  Mode #4  : 0.664139-0.777731*I
+  Mode #5  : 0.568737-1.023621*I
+  Mode #6  : 0.458997-1.285713*I
+  Mode #7  : 0.341808-1.562255*I
+  Mode #8  : 0.220958-1.849434*I
+
+Purely imaginary modes:
+  Mode #9  :  -23.680934*I   Delta:  0.387847
+  Mode #10 :  -24.068781*I   Delta:  0.387617
+  Mode #11 :  -24.456398*I   Delta:  0.387763
+  Mode #12 :  -24.844161*I   Delta:  0.387681
+  Mode #13 :  -25.231842*I   Delta:  0.387725
+  Mode #14 :  -25.619566*I   Delta:  0.387713
+  Mode #15 :  -26.007280*I   Delta:  0.387707
+  Mode #16 :  -26.394987*I   Delta:  0.387730
+  Mode #17 :  -26.782717*I   Delta:  0.387701
+  Mode #18 :  -27.170418*I   Delta:  0.387737
+  Mode #19 :  -27.558155*I   Delta:  0.387705
+  Mode #20 :  -27.945861*I   Delta:  0.387733
+  Mode #21 :  -28.333594*I   Delta:  0.387719
+  Mode #22 :  -28.721313*I   Delta:  0.387722
+  Mode #23 :  -29.109035*I   Delta:  0.387736
+  Mode #24 :  -29.496771*I   Delta:  0.387715
+  Mode #25 :  -29.884487*I   Delta:  0.387738
+  Mode #26 :  -30.272225*I   Delta:  0.775451
+  Mode #27 :  -31.047676*I   Delta:       N/A
+
+Note: 35 total common QNMs found (including negative real part counterparts)
+
+Instability Analysis:
+------------------------
+No instabilities (Im(ω) >= 0.0001) have been detected.
+
+Summary:
+------------------------
+- Found 35 total QNMs
+- 27 physical modes (8 positive real, 19 purely imaginary)
+- No instabilities (Im(ω) >= 0.0001) found
+
+End of Report
+==============================================

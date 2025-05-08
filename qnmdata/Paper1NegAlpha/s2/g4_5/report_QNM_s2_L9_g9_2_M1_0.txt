@@ -1,0 +1,69 @@
+QNM Analysis Report - 2025-05-08 22:19:44
+==============================================
+Parameters:
+  s = 2, L = 9, g = 9/2, M = 1
+  resolutions = [200  190  180]
+Job Name: QNM_s2_L9_g9_2_M1_0
+==============================================
+
+QNM Analysis Results:
+------------------------
+Common QNMs (found in all resolutions) within tolerance 0.0001:
+Found 37 physical modes (16 positive real part, 21 purely imaginary)
+Sorted by decreasing imaginary part
+
+Modes with positive real part:
+  Mode #1  : 1.468315-0.108203*I
+  Mode #2  : 1.454226-0.325234*I
+  Mode #3  : 1.426144-0.544162*I
+  Mode #4  : 1.384297-0.766324*I
+  Mode #5  : 1.329118-0.993144*I
+  Mode #6  : 1.261349-1.226097*I
+  Mode #7  : 1.182143-1.466616*I
+  Mode #8  : 1.093132-1.715899*I
+  Mode #9  : 0.996372-1.974668*I
+  Mode #10 : 0.894156-2.242946*I
+  Mode #11 : 0.788698-2.519973*I
+  Mode #12 : 0.681844-2.804299*I
+  Mode #13 : 0.574940-3.094019*I
+  Mode #14 : 0.468878-3.387071*I
+  Mode #15 : 0.364104-3.681395*I
+  Mode #16 : 0.261284-3.974148*I
+
+Purely imaginary modes:
+  Mode #17 :  -10.863910*I   Delta: 12.423089
+  Mode #18 :  -23.286999*I   Delta:  0.387721
+  Mode #19 :  -23.674720*I   Delta:  0.387958
+  Mode #20 :  -24.062678*I   Delta:  0.387794
+  Mode #21 :  -24.450472*I   Delta:  0.387893
+  Mode #22 :  -24.838365*I   Delta:  0.387823
+  Mode #23 :  -25.226188*I   Delta:  0.387859
+  Mode #24 :  -25.614047*I   Delta:  0.387835
+  Mode #25 :  -26.001881*I   Delta:  0.387838
+  Mode #26 :  -26.389719*I   Delta:  0.387839
+  Mode #27 :  -26.777558*I   Delta:  0.387825
+  Mode #28 :  -27.165383*I   Delta:  0.387838
+  Mode #29 :  -27.553221*I   Delta:  0.387817
+  Mode #30 :  -27.941038*I   Delta:  0.387832
+  Mode #31 :  -28.328870*I   Delta:  0.387818
+  Mode #32 :  -28.716688*I   Delta:  0.387820
+  Mode #33 :  -29.104508*I   Delta:  0.387823
+  Mode #34 :  -29.492331*I   Delta:  0.387809
+  Mode #35 :  -29.880140*I   Delta:  0.387822
+  Mode #36 :  -30.267962*I   Delta:  0.775618
+  Mode #37 :  -31.043580*I   Delta:       N/A
+
+Note: 53 total common QNMs found (including negative real part counterparts)
+
+Instability Analysis:
+------------------------
+No instabilities (Im(ω) >= 0.0001) have been detected.
+
+Summary:
+------------------------
+- Found 53 total QNMs
+- 37 physical modes (16 positive real, 21 purely imaginary)
+- No instabilities (Im(ω) >= 0.0001) found
+
+End of Report
+==============================================
