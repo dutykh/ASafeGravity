@@ -1,0 +1,48 @@
+QNM Analysis Report - 2025-05-08 19:01:10
+==============================================
+Parameters:
+  s = 2, L = 7, g = 0.5, M = 1
+  resolutions = [200  190  180]
+Job Name: QNM_s2_L7_g0.5_M1_0
+==============================================
+
+QNM Analysis Results:
+------------------------
+Common QNMs (found in all resolutions) within tolerance 0.0001:
+Found 18 physical modes (18 positive real part, 0 purely imaginary)
+Sorted by decreasing imaginary part
+
+Modes with positive real part:
+  Mode #1  : 1.237249-0.101626*I
+  Mode #2  : 1.225127-0.305821*I
+  Mode #3  : 1.201162-0.512859*I
+  Mode #4  : 1.165977-0.724662*I
+  Mode #5  : 1.120636-0.943113*I
+  Mode #6  : 1.066730-1.169898*I
+  Mode #7  : 1.006366-1.406255*I
+  Mode #8  : 0.941982-1.652711*I
+  Mode #9  : 0.875991-1.908962*I
+  Mode #10 : 0.810408-2.173987*I
+  Mode #11 : 0.746624-2.446347*I
+  Mode #12 : 0.685397-2.724518*I
+  Mode #13 : 0.626980-3.007112*I
+  Mode #14 : 0.571302-3.292988*I
+  Mode #15 : 0.518115-3.581254*I
+  Mode #16 : 0.467091-3.871236*I
+  Mode #17 : 0.417892-4.162430*I
+  Mode #18 : 0.370199-4.454457*I
+
+Note: 36 total common QNMs found (including negative real part counterparts)
+
+Instability Analysis:
+------------------------
+No instabilities (Im(ω) >= 0.0001) have been detected.
+
+Summary:
+------------------------
+- Found 36 total QNMs
+- 18 physical modes (18 positive real, 0 purely imaginary)
+- No instabilities (Im(ω) >= 0.0001) found
+
+End of Report
+==============================================

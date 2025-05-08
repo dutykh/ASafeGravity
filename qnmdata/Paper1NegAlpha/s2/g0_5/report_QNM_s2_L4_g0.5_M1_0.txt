@@ -1,0 +1,39 @@
+QNM Analysis Report - 2025-05-08 18:48:35
+==============================================
+Parameters:
+  s = 2, L = 4, g = 0.5, M = 1
+  resolutions = [200  190  180]
+Job Name: QNM_s2_L4_g0.5_M1_0
+==============================================
+
+QNM Analysis Results:
+------------------------
+Common QNMs (found in all resolutions) within tolerance 0.0001:
+Found 9 physical modes (9 positive real part, 0 purely imaginary)
+Sorted by decreasing imaginary part
+
+Modes with positive real part:
+  Mode #1  : 0.704317-0.100252*I
+  Mode #2  : 0.682708-0.303433*I
+  Mode #3  : 0.640856-0.514768*I
+  Mode #4  : 0.582226-0.739578*I
+  Mode #5  : 0.512820-0.981466*I
+  Mode #6  : 0.439621-1.240372*I
+  Mode #7  : 0.367594-1.512838*I
+  Mode #8  : 0.298234-1.794430*I
+  Mode #9  : 0.230078-2.081441*I
+
+Note: 18 total common QNMs found (including negative real part counterparts)
+
+Instability Analysis:
+------------------------
+No instabilities (Im(ω) >= 0.0001) have been detected.
+
+Summary:
+------------------------
+- Found 18 total QNMs
+- 9 physical modes (9 positive real, 0 purely imaginary)
+- No instabilities (Im(ω) >= 0.0001) found
+
+End of Report
+==============================================
