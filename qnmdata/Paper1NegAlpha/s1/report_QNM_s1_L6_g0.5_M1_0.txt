@@ -1,0 +1,150 @@
+QNM Analysis Report - 2025-05-08 16:34:05
+==============================================
+Parameters:
+  s = 1, L = 6, g = 0.5, M = 1
+  resolutions = [200  190  180]
+Job Name: QNM_s1_L6_g0.5_M1_0
+==============================================
+
+QNM Analysis Results:
+------------------------
+Common QNMs (found in all resolutions) within tolerance 0.0001:
+Found 118 physical modes (17 positive real part, 101 purely imaginary)
+Sorted by decreasing imaginary part
+
+Modes with positive real part:
+  Mode #1  : 1.092672-0.102298*I
+  Mode #2  : 1.079025-0.308136*I
+  Mode #3  : 1.052177-0.517715*I
+  Mode #4  : 1.013134-0.733534*I
+  Mode #5  : 0.963617-0.957937*I
+  Mode #6  : 0.906124-1.192763*I
+  Mode #7  : 0.843731-1.438913*I
+  Mode #8  : 0.779555-1.696091*I
+  Mode #9  : 0.716151-1.962965*I
+  Mode #10 : 0.655158-2.237655*I
+  Mode #11 : 0.597334-2.518248*I
+  Mode #12 : 0.542811-2.803108*I
+  Mode #13 : 0.491363-3.090969*I
+  Mode #14 : 0.442612-3.380907*I
+  Mode #15 : 0.396131-3.672269*I
+  Mode #16 : 0.351505-3.964587*I
+  Mode #17 : 0.308342-4.257492*I
+
+Purely imaginary modes:
+  Mode #18 :   -8.856758*I   Delta:  0.318122
+  Mode #19 :   -9.174880*I   Delta:  0.318004
+  Mode #20 :   -9.492884*I   Delta:  0.317931
+  Mode #21 :   -9.810815*I   Delta:  0.317822
+  Mode #22 :  -10.128637*I   Delta:  0.317747
+  Mode #23 :  -10.446385*I   Delta:  0.317672
+  Mode #24 :  -10.764057*I   Delta:  0.317604
+  Mode #25 :  -11.081661*I   Delta:  0.317544
+  Mode #26 :  -11.399205*I   Delta:  0.317491
+  Mode #27 :  -11.716696*I   Delta:  0.317442
+  Mode #28 :  -12.034137*I   Delta:  0.317398
+  Mode #29 :  -12.351536*I   Delta:  0.317358
+  Mode #30 :  -12.668893*I   Delta:  0.317322
+  Mode #31 :  -12.986216*I   Delta:  0.317290
+  Mode #32 :  -13.303505*I   Delta:  0.317260
+  Mode #33 :  -13.620766*I   Delta:  0.317233
+  Mode #34 :  -13.937999*I   Delta:  0.317209
+  Mode #35 :  -14.255208*I   Delta:  0.317187
+  Mode #36 :  -14.572394*I   Delta:  0.317166
+  Mode #37 :  -14.889560*I   Delta:  0.317147
+  Mode #38 :  -15.206708*I   Delta:  0.317130
+  Mode #39 :  -15.523838*I   Delta:  0.317115
+  Mode #40 :  -15.840953*I   Delta:  0.317100
+  Mode #41 :  -16.158053*I   Delta:  0.317087
+  Mode #42 :  -16.475140*I   Delta:  0.317075
+  Mode #43 :  -16.792215*I   Delta:  0.317063
+  Mode #44 :  -17.109278*I   Delta:  0.317053
+  Mode #45 :  -17.426331*I   Delta:  0.317043
+  Mode #46 :  -17.743375*I   Delta:  0.317035
+  Mode #47 :  -18.060409*I   Delta:  0.317026
+  Mode #48 :  -18.377435*I   Delta:  0.317019
+  Mode #49 :  -18.694454*I   Delta:  0.317012
+  Mode #50 :  -19.011466*I   Delta:  0.317005
+  Mode #51 :  -19.328471*I   Delta:  0.316999
+  Mode #52 :  -19.645470*I   Delta:  0.316993
+  Mode #53 :  -19.962463*I   Delta:  0.316988
+  Mode #54 :  -20.279451*I   Delta:  0.316983
+  Mode #55 :  -20.596434*I   Delta:  0.316978
+  Mode #56 :  -20.913412*I   Delta:  0.316974
+  Mode #57 :  -21.230386*I   Delta:  0.316970
+  Mode #58 :  -21.547356*I   Delta:  0.316966
+  Mode #59 :  -21.864322*I   Delta:  0.316963
+  Mode #60 :  -22.181285*I   Delta:  0.316959
+  Mode #61 :  -22.498244*I   Delta:  0.316956
+  Mode #62 :  -22.815200*I   Delta:  0.316953
+  Mode #63 :  -23.132154*I   Delta:  0.316951
+  Mode #64 :  -23.449104*I   Delta:  0.316948
+  Mode #65 :  -23.766052*I   Delta:  0.316946
+  Mode #66 :  -24.082998*I   Delta:  0.316943
+  Mode #67 :  -24.399941*I   Delta:  0.316941
+  Mode #68 :  -24.716883*I   Delta:  0.316939
+  Mode #69 :  -25.033822*I   Delta:  0.316937
+  Mode #70 :  -25.350759*I   Delta:  0.316936
+  Mode #71 :  -25.667695*I   Delta:  0.316934
+  Mode #72 :  -25.984628*I   Delta:  0.316932
+  Mode #73 :  -26.301561*I   Delta:  0.316931
+  Mode #74 :  -26.618491*I   Delta:  0.316929
+  Mode #75 :  -26.935421*I   Delta:  0.316928
+  Mode #76 :  -27.252348*I   Delta:  0.316927
+  Mode #77 :  -27.569275*I   Delta:  0.316925
+  Mode #78 :  -27.886201*I   Delta:  0.316924
+  Mode #79 :  -28.203125*I   Delta:  0.316923
+  Mode #80 :  -28.520048*I   Delta:  0.316922
+  Mode #81 :  -28.836970*I   Delta:  0.316921
+  Mode #82 :  -29.153891*I   Delta:  0.316920
+  Mode #83 :  -29.470811*I   Delta:  0.316919
+  Mode #84 :  -29.787731*I   Delta:  0.316918
+  Mode #85 :  -30.104649*I   Delta:  0.316918
+  Mode #86 :  -30.421567*I   Delta:  0.316917
+  Mode #87 :  -30.738484*I   Delta:  0.316916
+  Mode #88 :  -31.055400*I   Delta:  0.316915
+  Mode #89 :  -31.372315*I   Delta:  0.316915
+  Mode #90 :  -31.689230*I   Delta:  0.316914
+  Mode #91 :  -32.006144*I   Delta:  0.316914
+  Mode #92 :  -32.323058*I   Delta:  0.316913
+  Mode #93 :  -32.639971*I   Delta:  0.316912
+  Mode #94 :  -32.956883*I   Delta:  0.316912
+  Mode #95 :  -33.273795*I   Delta:  0.316911
+  Mode #96 :  -33.590707*I   Delta:  0.316911
+  Mode #97 :  -33.907618*I   Delta:  0.316910
+  Mode #98 :  -34.224528*I   Delta:  0.316910
+  Mode #99 :  -34.541438*I   Delta:  0.316910
+  Mode #100:  -34.858348*I   Delta:  0.316909
+  Mode #101:  -35.175257*I   Delta:  0.316909
+  Mode #102:  -35.492166*I   Delta:  0.316908
+  Mode #103:  -35.809074*I   Delta:  0.316908
+  Mode #104:  -36.125983*I   Delta:  0.316908
+  Mode #105:  -36.442890*I   Delta:  0.316907
+  Mode #106:  -36.759798*I   Delta:  0.316907
+  Mode #107:  -37.076705*I   Delta:  0.316907
+  Mode #108:  -37.393612*I   Delta:  0.316907
+  Mode #109:  -37.710518*I   Delta:  0.316906
+  Mode #110:  -38.027425*I   Delta:  0.316906
+  Mode #111:  -38.344331*I   Delta:  0.316906
+  Mode #112:  -38.661236*I   Delta:  0.316906
+  Mode #113:  -38.978142*I   Delta:  0.316905
+  Mode #114:  -39.295047*I   Delta:  0.316905
+  Mode #115:  -39.611952*I   Delta:  0.316905
+  Mode #116:  -39.928857*I   Delta:  0.316905
+  Mode #117:  -40.245762*I   Delta:  0.316904
+  Mode #118:  -40.562666*I   Delta:       N/A
+
+Note: 135 total common QNMs found (including negative real part counterparts)
+
+Instability Analysis:
+------------------------
+No instabilities (Im(ω) >= 0.0001) have been detected.
+
+Summary:
+------------------------
+- Found 135 total QNMs
+- 118 physical modes (17 positive real, 101 purely imaginary)
+- No instabilities (Im(ω) >= 0.0001) found
+
+End of Report
+==============================================
