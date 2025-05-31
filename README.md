@@ -2,6 +2,12 @@
 
 Collection of codes and supplemental materials for our papers on the computation of quasi-normal modes (QNMs) of black holes in asymptotically safe gravity.
 
+## Authors
+
+- Dr. Davide Batic (Mathematics Department, Khalifa University of Science and Technology, PO Box 127788, Abu Dhabi, United Arab Emirates)
+- Dr. Denys Dutykh (Mathematics Department, Khalifa University of Science and Technology, PO Box 127788, Abu Dhabi, United Arab Emirates)
+- Dr. Fabio Scardigli (Dipartimento di Matematica, Politecnico di Milano, Piazza Leonardo da Vinci 32, 20133 Milano, Italy)
+
 ## Repository Structure
 
 This repository contains source codes and computed data for QNM calculations in different programming environments, as well as the resulting datasets. The main directories are:
