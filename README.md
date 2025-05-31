@@ -1,5 +1,7 @@
 # Asymptotically Safe Gravity
 
+![Asymptotically Safe Gravity](pics/asg.png)
+
 Collection of codes and supplemental materials for our papers on the computation of quasi-normal modes (QNMs) of black holes in asymptotically safe gravity.
 
 ## Authors
@@ -27,3 +29,10 @@ Each paper directory contains the relevant code and/or data for the correspondin
 ## Usage
 
 Browse the respective directories for codes and data associated with each paper. For questions or to reproduce results, refer to the documentation and scripts in the relevant subfolders.
+
+<table>
+<tr>
+<td><img src="pics/code.jpg" alt="Code" width="400"/></td>
+<td><img src="pics/bhcode.png" alt="Black Hole Code" width="400"/></td>
+</tr>
+</table>
