@@ -1,0 +1,58 @@
+QNM Analysis Report - 2025-06-21 10:24:47
+==============================================
+Parameters:
+  s = 1, L = 1, g = 9/2, M = 3.50274
+  resolutions = [400  390  380]
+Job Name: QNM_s1_L1_g9_2_M3_50
+==============================================
+
+QNM Analysis Results:
+------------------------
+Common QNMs (found in all resolutions) within tolerance 0.0001:
+Found 26 modes (5 oscillatory, 21 overdamped)
+Sorted by decreasing imaginary part
+
+Oscillatory modes (positive real part):
+  Mode #1  : 0.0781389-0.0215726*I
+  Mode #2  : 0.0676109-0.0671448*I
+  Mode #3  : 0.0488211-0.1211447*I
+  Mode #4  : 0.0300473-0.1862388*I
+  Mode #5  : 0.0164219-0.2566857*I
+
+Overdamped modes (purely imaginary):
+  Mode #1  :  -0.0000059*I   Delta: 0.0000000
+  Mode #2  :  -0.0000060*I   Delta: 0.0000204
+  Mode #3  :  -0.0000263*I   Delta: 0.0000009
+  Mode #4  :  -0.0000273*I   Delta: 0.0000404
+  Mode #5  :  -0.0000676*I   Delta: 0.0000031
+  Mode #6  :  -0.0000708*I   Delta: 0.0000657
+  Mode #7  :  -0.0001365*I   Delta: 0.0000074
+  Mode #8  :  -0.0001438*I   Delta: 0.0000959
+  Mode #9  :  -0.0002398*I   Delta: 0.0000141
+  Mode #10 :  -0.0002539*I   Delta: 0.0001304
+  Mode #11 :  -0.0003843*I   Delta: 0.0000241
+  Mode #12 :  -0.0004084*I   Delta: 0.0001685
+  Mode #13 :  -0.0005770*I   Delta: 0.0000378
+  Mode #14 :  -0.0006147*I   Delta: 0.0002097
+  Mode #15 :  -0.0008245*I   Delta: 0.0000558
+  Mode #16 :  -0.0008803*I   Delta: 0.0003323
+  Mode #17 :  -0.0012126*I   Delta: 0.0004064
+  Mode #18 :  -0.0016190*I   Delta: 0.0004881
+  Mode #19 :  -0.0021071*I   Delta: 0.0005772
+  Mode #20 :  -0.0026842*I   Delta: 0.2390955
+  Mode #21 :  -0.2417797*I   Delta:       N/A
+
+Note: 31 total common QNMs found (including negative real part counterparts)
+
+Instability Analysis:
+------------------------
+No instabilities (Im(ω) >= 0.0001) have been detected.
+
+Summary:
+------------------------
+- Found 31 total QNMs
+- 26 modes (5 oscillatory, 21 overdamped)
+- No instabilities (Im(ω) >= 0.0001) found
+
+End of Report
+==============================================
