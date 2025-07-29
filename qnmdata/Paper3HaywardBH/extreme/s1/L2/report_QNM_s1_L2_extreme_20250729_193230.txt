@@ -1,0 +1,57 @@
+QNM Analysis Report (Extreme Case) - 2025-07-29 19:32:30
+==============================================
+Parameters:
+  s = 1, L = 2
+  resolutions = [300  290  280]
+Job Name: QNM_s1_L2_extreme
+==============================================
+
+QNM Analysis Results:
+------------------------
+Common QNMs (found in all resolutions) within tolerance 0.0001:
+Found 25 modes (8 oscillatory, 17 overdamped)
+Sorted by decreasing imaginary part
+
+Oscillatory modes (positive real part):
+  Mode #1  : 0.4861702-0.0793616*I
+  Mode #2  : 0.4633339-0.2411961*I
+  Mode #3  : 0.4184702-0.4132287*I
+  Mode #4  : 0.3556527-0.6041566*I
+  Mode #5  : 0.2855386-0.8205551*I
+  Mode #6  : 0.2213928-1.0596179*I
+  Mode #7  : 0.1692812-1.3117342*I
+  Mode #8  : 0.1282171-1.5693038*I
+
+Overdamped modes (purely imaginary):
+  Mode #1  :  -0.0001064*I   Delta: 0.0000000
+  Mode #2  :  -0.0001064*I   Delta: 0.0002394
+  Mode #3  :  -0.0003458*I   Delta: 0.0000000
+  Mode #4  :  -0.0003458*I   Delta: 15.0637948
+  Mode #5  : -15.0641406*I   Delta: 0.2520744
+  Mode #6  : -15.3162150*I   Delta: 0.2528443
+  Mode #7  : -15.5690593*I   Delta: 0.2519476
+  Mode #8  : -15.8210069*I   Delta: 1.5143809
+  Mode #9  : -17.3353879*I   Delta: 0.2526107
+  Mode #10 : -17.5879986*I   Delta: 0.2521946
+  Mode #11 : -17.8401932*I   Delta: 0.2523947
+  Mode #12 : -18.0925879*I   Delta: 0.2523628
+  Mode #13 : -18.3449507*I   Delta: 0.2522626
+  Mode #14 : -18.5972133*I   Delta: 1.0094739
+  Mode #15 : -19.6066872*I   Delta: 5.8019332
+  Mode #16 : -25.4086204*I   Delta: 10.5923178
+  Mode #17 : -36.0009382*I   Delta:       N/A
+
+Note: 33 total common QNMs found (including negative real part counterparts)
+
+Instability Analysis:
+------------------------
+No instabilities (Im(ω) >= 0.0001) have been detected.
+
+Summary:
+------------------------
+- Found 33 total QNMs
+- 25 modes (8 oscillatory, 17 overdamped)
+- No instabilities (Im(ω) >= 0.0001) found
+
+End of Report
+==============================================
