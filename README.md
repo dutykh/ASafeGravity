@@ -14,9 +14,9 @@ Repository: https://github.com/dutykh/ASafeGravity/
 
 ## Publications
 
-This repository accompanies a series of three articles. The directory names
-`Paper1NegAlpha/`, `Paper2PosAlpha/`, and `Paper3HaywardBH/` correspond to the
-papers listed below.
+This repository accompanies a series of three articles, all of which are now
+published. The directory names `Paper1NegAlpha/`, `Paper2PosAlpha/`, and
+`Paper3HaywardBH/` correspond to the papers listed below.
 
 1. **Paper 1 (published).** D. Batic, D. Dutykh, and F. Scardigli,
    *Spectral analysis of quasinormal modes of Planck stars*,
@@ -30,14 +30,17 @@ papers listed below.
    [doi:10.1103/sgt6-kwfl](https://doi.org/10.1103/sgt6-kwfl).
    [Published version](https://journals.aps.org/prd/abstract/10.1103/sgt6-kwfl);
    [preprint arXiv:2607.10199](https://arxiv.org/abs/2607.10199)
-3. **Paper 3 (in preparation).** D. Batic and D. Dutykh,
-   *Quasinormal modes of Hayward black holes via the spectral method*
-   (manuscript in preparation).
+3. **Paper 3 (published).** D. Batic and D. Dutykh,
+   *Quasinormal modes of Hayward black holes from Schwarzschild to extremality:
+   A comparative spectral analysis*,
+   Phys. Dark Univ. **54**, 102467 (2026).
+   [doi:10.1016/j.dark.2026.102467](https://doi.org/10.1016/j.dark.2026.102467).
+   [Published version](https://www.sciencedirect.com/science/article/pii/S2212686426002542)
 
 ### How to cite
 
 If you use these codes or data, please cite the relevant paper. BibTeX for the
-published papers:
+three papers:
 
 ```bibtex
 @article{Batic2026PlanckStars,
@@ -58,6 +61,17 @@ published papers:
   pages   = {024023},
   year    = {2026},
   doi     = {10.1103/sgt6-kwfl},
+}
+
+@article{Batic2026Hayward,
+  author  = {Batic, Davide and Dutykh, Denys},
+  title   = {Quasinormal modes of {H}ayward black holes from {S}chwarzschild to
+             extremality: {A} comparative spectral analysis},
+  journal = {Physics of the Dark Universe},
+  volume  = {54},
+  pages   = {102467},
+  year    = {2026},
+  doi     = {10.1016/j.dark.2026.102467},
 }
 ```
 
