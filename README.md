@@ -35,7 +35,8 @@ published. The directory names `Paper1NegAlpha/`, `Paper2PosAlpha/`, and
    A comparative spectral analysis*,
    Phys. Dark Univ. **54**, 102467 (2026).
    [doi:10.1016/j.dark.2026.102467](https://doi.org/10.1016/j.dark.2026.102467).
-   [Published version](https://www.sciencedirect.com/science/article/pii/S2212686426002542)
+   [Published version](https://www.sciencedirect.com/science/article/pii/S2212686426002542);
+   [preprint arXiv:2609.33267](https://arxiv.org/abs/2609.33267)
 
 ### How to cite
 
