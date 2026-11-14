@@ -1,0 +1,91 @@
+# Dr. Denys Dutykh (Mathematics Department, Khalifa University of Science and Technology, Abu Dhabi, UAE)
+cff-version: 1.2.0
+message: "If you use these codes or data, please cite the article given under preferred-citation, or the one of the references that the material belongs to."
+title: "ASafeGravity: quasinormal modes of Planck stars, Bonanno–Reuter and Hayward black holes"
+type: software
+authors:
+  - family-names: Batic
+    given-names: Davide
+    affiliation: "Khalifa University of Science and Technology"
+    orcid: "https://orcid.org/0000-0002-7619-4900"
+  - family-names: Dutykh
+    given-names: Denys
+    affiliation: "Khalifa University of Science and Technology"
+    orcid: "https://orcid.org/0000-0001-5247-2788"
+  - family-names: Scardigli
+    given-names: Fabio
+    affiliation: "Politecnico di Milano"
+repository-code: "https://github.com/dutykh/ASafeGravity"
+license: GPL-3.0-only
+version: 1.0.0
+date-released: "2026-11-14"
+keywords:
+  - general-relativity
+  - black-holes
+  - quasinormal-modes
+  - asymptotically-safe-gravity
+  - quantum-gravity
+  - spectral-methods
+  - chebyshev-polynomials
+  - maple
+abstract: >-
+  Maple worksheets and procedures, with the computed spectra, for the quasinormal modes of scalar, electromagnetic and
+  gravitational perturbations of black holes improved by a running Newton coupling: Planck stars, Bonanno–Reuter black
+  holes and Hayward black holes, from the Schwarzschild limit to extremality. A Chebyshev collocation of the
+  compactified radial equation in multiprecision arithmetic gives a quadratic eigenvalue problem, whose converged
+  eigenvalues are listed in 186 reports.
+preferred-citation:
+  type: article
+  title: Spectral Analysis of Quasinormal Modes of Planck Stars
+  authors:
+  - family-names: Batic
+    given-names: Davide
+  - family-names: Dutykh
+    given-names: Denys
+  - family-names: Scardigli
+    given-names: Fabio
+  journal: The European Physical Journal C
+  volume: 86
+  issue: '2'
+  start: 165
+  year: 2026
+  month: 2
+  doi: 10.1140/epjc/s10052-026-15430-8
+  identifiers:
+  - type: url
+    value: https://arxiv.org/abs/2602.19833
+    description: arXiv preprint
+references:
+  - type: article
+    title: Quasinormal Modes of Bonanno-Reuter Black Holes via the Spectral Method
+    authors:
+    - family-names: Batic
+      given-names: Davide
+    - family-names: Dutykh
+      given-names: Denys
+    - family-names: Scardigli
+      given-names: Fabio
+    journal: Physical Review D
+    volume: 114
+    issue: '2'
+    start: '024023'
+    year: 2026
+    month: 7
+    doi: 10.1103/sgt6-kwfl
+    identifiers:
+    - type: url
+      value: https://arxiv.org/abs/2607.10199
+      description: arXiv preprint
+  - type: article
+    title: 'Quasinormal Modes of Hayward Black Holes from Schwarzschild to Extremality: A Comparative Spectral Analysis'
+    authors:
+    - family-names: Batic
+      given-names: Davide
+    - family-names: Dutykh
+      given-names: Denys
+    journal: Physics of the Dark Universe
+    volume: 54
+    start: 102467
+    year: 2026
+    month: 12
+    doi: 10.1016/j.dark.2026.102467
