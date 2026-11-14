@@ -216,11 +216,13 @@ https://doi.org/10.1016/j.dark.2026.102467
 ```
 
 The button "Cite this repository" in the right-hand column of this page gives the first article, read from
-`CITATION.cff`, which lists the other two among its references. Free copies of the first two articles are on arXiv:
+`CITATION.cff`, which lists the other two among its references. Free copies of the three articles are on arXiv:
 
 https://arxiv.org/abs/2602.19833
 
 https://arxiv.org/abs/2607.10199
+
+https://arxiv.org/abs/2609.33267
 
 ## Licence
 
