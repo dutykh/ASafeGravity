@@ -13,17 +13,18 @@ line), for the scalar field with ℓ = 0 and ℓ = 1, the electromagnetic field 
 at extremality, and raises the frequency, by up to 9.5 per cent for the axial quadrupole, except for the scalar
 monopole, whose frequency rises up to γ ≈ 0.74 and then falls back almost to its Schwarzschild value.
 
-ASafeGravity holds the Maple material and the computed spectra of a series of three articles on the quasinormal modes
-of black holes whose metric is improved by a running Newton coupling, as in asymptotically safe gravity: Planck stars
-(Paper 1), Bonanno–Reuter black holes (Paper 2) and Hayward black holes (Paper 3). For massless scalar (s = 0),
-electromagnetic (s = 1) and gravitational (s = 2) perturbations, the radial equation is compactified onto the interval
-−1 ⩽ y ⩽ 1, its quasinormal boundary conditions are built into a factorisation of the solution, and a Chebyshev
-collocation in multiprecision arithmetic gives a quadratic eigenvalue problem whose converged eigenvalues are the
-quasinormal frequencies. The repository holds the Maple worksheets of the derivations for the three papers, the Maple
-procedures that assemble the matrices for Papers 1 and 2, and 186 reports of computed spectra; the solution of the
-eigenvalue problem, done in MATLAB with the Advanpix toolbox for the articles, is not part of it. The articles, by
-Davide Batic, Denys Dutykh and Fabio Scardigli (Papers 1 and 2) and by Davide Batic and Denys Dutykh (Paper 3), are
-cited below.
+ASafeGravity holds the codes and the computed spectra of a series of three articles on the quasinormal modes of black
+holes whose metric is improved by a running Newton coupling, as in asymptotically safe gravity: Planck stars (Paper 1),
+Bonanno–Reuter black holes (Paper 2) and Hayward black holes (Paper 3). For massless scalar (s = 0), electromagnetic
+(s = 1) and gravitational (s = 2) perturbations, the radial equation is compactified onto the interval −1 ⩽ y ⩽ 1, its
+quasinormal boundary conditions are built into a factorisation of the solution, and a Chebyshev collocation in
+multiprecision arithmetic gives a quadratic eigenvalue problem whose converged eigenvalues are the quasinormal
+frequencies. The repository holds the Maple worksheets of the derivations and the Maple procedures that assemble the
+matrices for the three papers, and 186 reports of computed spectra. For Paper 3 it also holds the MATLAB script that
+solves the eigenvalue problem with the Advanpix toolbox and writes the reports, and the Python driver that runs Maple
+and MATLAB for every set of parameters; for Papers 1 and 2 the solution of the eigenvalue problem, done in MATLAB with
+the Advanpix toolbox as well, is not part of it. The articles, by Davide Batic, Denys Dutykh and Fabio Scardigli
+(Papers 1 and 2) and by Davide Batic and Denys Dutykh (Paper 3), are cited below.
 
 ## The three geometries
 
@@ -68,9 +69,9 @@ solved.
 
 ## Quick start
 
-The procedures of `matlab/` are Maple procedures, despite the name of the folder: they assemble the three matrices for
-MATLAB. Each writes `data/M0_N.mat`, `data/M1_N.mat` and `data/M2_N.mat`, in the ASCII format of MATLAB, into the folder
-of the path it is given, which must exist. To recompute the report of Paper 1 for s = 0, ℓ = 0, γ = 1/2 and M = 1,
+The files `matrixassembler.mpl` of `matlab/` are Maple procedures, despite the name of the folder: they assemble the
+three matrices for MATLAB. Each writes `data/M0_N.mat`, `data/M1_N.mat` and `data/M2_N.mat`, in the ASCII format of
+MATLAB, into the folder of the path it is given, which must exist. To recompute the report of Paper 1 for s = 0, ℓ = 0, γ = 1/2 and M = 1,
 whose header lists the resolutions 200, 190 and 180, from the folder of the repository:
 
 ```bash
@@ -104,8 +105,76 @@ for N = [200, 190, 180]
 end
 ```
 
-The quasinormal frequencies are the eigenvalues common to the three resolutions, which the reports list. The three
-articles compute with 200 digits.
+The quasinormal frequencies are the eigenvalues common to the three resolutions, which the reports list. For Paper 3,
+the scripts of the next section do all of this, from the assembly of the matrices to the report.
+
+## The codes of Paper 3
+
+For Paper 3 the repository holds the whole chain that wrote the 53 reports of `qnmdata/Paper3HaywardBH/`: Maple
+assembles the three matrices at each resolution, MATLAB solves the quadratic eigenvalue problem in multiprecision
+arithmetic and writes the report, and a Python driver runs the two in turn for every set of parameters. The folder
+`matlab/Paper3HaywardBH/` holds one copy of each file; the non-extremal and the near-extremal black holes share those of
+`nonextreme/`.
+
+| File in `matlab/Paper3HaywardBH/` | Content |
+|---|---|
+| `nonextreme/matrixassembler.mpl` | Maple procedure `MatrixAssembler(d, N, s, L, g, p)` for 0 ⩽ γ < 32/27; it takes as event horizon ρ_h the real root of ρ³ − 2ρ² + γ = 0 nearest to a tabulated guess, and prints it |
+| `extreme/matrixassembler.mpl` | Maple procedure `MatrixAssembler(d, N, s, L, p)` for the extremal black hole, whose coefficients carry γ = 32/27 and ρ_h = 4/3 |
+| `nonextreme/chaseQNMs_template.m`, `extreme/chaseQNMs_template.m` | MATLAB script, with the Advanpix toolbox: solves the problem at the three resolutions, keeps the common eigenvalues, writes the report and plots the spectra |
+| `nonextreme/run_qnm_computation.py`, `extreme/run_qnm_computation.py` | Python driver: runs Maple, then MATLAB, for every value of γ (non-extremal) or of ℓ (extremal) |
+| `utils.py`, `requirements.txt`, `.env.example` | helper functions and Python packages of both drivers, and an example of their configuration file `.env` |
+
+The extremal MATLAB script and driver differ from the non-extremal ones only in the parameter γ, which they do not
+take, in the folders they run through, and in the names and headers of the reports. For each set of parameters, the
+driver creates the folders `data/`, `results/` and `shots/`, copies the template as `chaseQNMs.m`, and writes for each
+resolution N a short Maple script that reads `matrixassembler.mpl` and calls `MatrixAssembler(N, N, s, L, g, path)`
+(without `g` in the extremal case); command-line Maple runs the three resolutions in parallel, each writing
+`data/M0_N.mat`, `data/M1_N.mat` and `data/M2_N.mat`. The driver then writes the parameters into `matlab_params.mat`
+and starts MATLAB on `chaseQNMs.m`, which for each resolution sets the precision to N digits (`mp.Digits(N)`), reads
+the matrices with `mp.read` and computes the 2N eigenvalues of `polyeig(M0, mp('1i')*M1, M2)`. Since the first argument
+of the procedures is the number of digits, each resolution is thus assembled and solved with N digits. The script keeps
+the eigenvalues of the first resolution that lie within 10⁻⁴ of an eigenvalue of each of the other two, and lists those
+with a positive real part and the purely imaginary ones (real part below 10⁻¹⁶ in absolute value), by decreasing
+imaginary part, in `results/report_QNM_s{s}_L{ℓ}_g{γ}_{date}_{time}.txt`, with γ written to five significant digits
+(`g0.14815` for 4/27), or in `results/report_QNM_s{s}_L{ℓ}_extreme_{date}_{time}.txt` for the extremal black hole:
+these are the names and the format of the stored reports. It also saves the three spectra in `results/qnms.mat` and
+plots them, with the common eigenvalues circled, in `shots/chaseQNMs.png` (with copies in PDF, EPS and FIG formats).
+
+The drivers read the parameters from the names of the folders. The non-extremal driver runs in a folder `s{s}/L{ℓ}/`
+whose subfolders `g0`, `g1` and `gX_Y` (for γ = X/Y) are the values of γ to compute, and the extremal driver in a folder
+`s{s}/` whose subfolders `L{ℓ}` are the multipoles. The reports of Paper 3 come from the following runs.
+
+| Case | Scripts | Spin s, multipole ℓ and parameter γ | Reports |
+|---|---|---|---|
+| non-extremal | `nonextreme/` | s = 0, ℓ = 0 and 1: γ = 0, 4/27, 8/27, 12/27, 20/27, 24/27, 1 and 28/27; s = 1: γ = 0, 1, 11/10 and 59/50 for ℓ = 1, γ = 1, 11/10 and 59/50 for ℓ = 2, γ = 1 for ℓ = 3; s = 2: γ = 0, 1/2, 1 and 59/50 for ℓ = 2, γ = 1/2, 1 and 59/50 for ℓ = 3, γ = 1/2 for ℓ = 4 | 33 |
+| near-extremal | `nonextreme/` | s = 0, ℓ = 0 and 1, γ = 59/50 | 2 |
+| extremal | `extreme/` | γ = 32/27; ℓ = 0 to 5 for s = 0, 1 to 6 for s = 1, 2 to 7 for s = 2 | 18 |
+
+All runs use the resolutions 300, 290 and 280, set by `RESOLUTIONS` in `.env`, except the second report of s = 1,
+ℓ = 1, γ = 1, computed with `RESOLUTIONS=400,390,380` and renamed by hand with the suffix `_hires`. The driver passes γ
+to Maple as the shortest decimal form of a double-precision number (`g := 0.14814814814814814` for 4/27), so that the
+matrices of the reports are those of this decimal, which differs from the fraction by less than 10⁻¹⁶ (the values
+11/10, 59/50, 1/2, 0 and 1 are exact).
+
+To run a case again, gather the files of the case and the shared ones in a working folder named after the parameters,
+create the subfolders, and write the configuration file `.env` from `.env.example` with the paths of Maple and of the
+Advanpix toolbox. For the non-extremal scalar monopole at γ = 4/27 and γ = 1, from the folder of the repository:
+
+```bash
+mkdir -p work/s0/L0/g4_27 work/s0/L0/g1
+cp matlab/Paper3HaywardBH/nonextreme/* matlab/Paper3HaywardBH/utils.py work/s0/L0/
+cp matlab/Paper3HaywardBH/.env.example work/s0/L0/.env     # then set MAPLE_EXECUTABLE and ADVANPIX_PATH
+python3 -m pip install -r matlab/Paper3HaywardBH/requirements.txt
+cd work/s0/L0 && python3 run_qnm_computation.py
+```
+
+For the extremal black hole, the files of `extreme/` and the shared ones go into a folder such as `work/s1/` with the
+subfolders `L1`, `L2` and so on, where the driver is run in the same way. The driver first empties the folders `data/`, `results/` and
+`shots/` of every subfolder, so that the results of an earlier run are lost. It reports its progress to a Telegram bot
+when `BOT_TOKEN` and `CHAT_ID` are set in `.env`, and sends nothing when they are left empty, as in `.env.example`. The
+option `MATLAB_PARALLEL` of `.env` has no effect, since the driver does not pass it on to MATLAB, which always solves the
+three resolutions one after the other. At the resolutions of the reports, one set of parameters took about a quarter of
+an hour.
 
 ## The computed spectra
 
@@ -140,16 +209,19 @@ not be a pole of the Green function.
 | Path | Content |
 |---|---|
 | `maple/` | five Maple 2024 worksheets with the derivations: Paper 1, Paper 2 (non-extremal and extremal) and Paper 3 (non-extremal and extremal) |
-| `matlab/` | the three Maple procedures `MatrixAssembler` of Paper 1 and of Paper 2 (non-extremal and extremal) |
+| `matlab/` | the five Maple procedures `MatrixAssembler` of Paper 1, Paper 2 (non-extremal and extremal) and Paper 3 (non-extremal and extremal); for Paper 3 also the MATLAB script that solves the eigenvalue problem and writes the reports, and the Python driver with its configuration example |
 | `qnmdata/` | the 186 reports of computed spectra described above |
 | `docs/figures/` | the script `plot_readme_figure.py` that draws the figure of this page from the reports of Paper 3, with the style file beside it |
 
 ## Requirements
 
 Maple 2024 or later, in which the worksheets are saved; the procedures use only `LinearAlgebra`, `ChebyshevT`, `fsolve`
-and `ExportMatrix`. To solve the eigenvalue problems, MATLAB with the Advanpix Multiprecision Computing Toolbox (a
-commercial toolbox). The figure of this page needs Python 3 with NumPy and Matplotlib, and is redrawn from
-`docs/figures/` by `python3 plot_readme_figure.py`.
+(Papers 1 and 2), `RootOf` with `allvalues` (Paper 3) and `ExportMatrix`, and those of Paper 3 were run with Maple 2022.
+To solve the eigenvalue problems, MATLAB with the Advanpix Multiprecision Computing Toolbox (a commercial toolbox); the
+MATLAB script of Paper 3 defines functions in the middle of the script, which MATLAB accepts from release R2024a on. The
+driver of Paper 3 needs Python 3 with SciPy, python-dotenv and requests (`matlab/Paper3HaywardBH/requirements.txt`), and
+calls Maple and MATLAB from the command line. The figure of this page needs Python 3 with NumPy and Matplotlib, and is
+redrawn from `docs/figures/` by `python3 plot_readme_figure.py`.
 
 ## How to cite
 

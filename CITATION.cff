@@ -17,8 +17,8 @@ authors:
     affiliation: "Politecnico di Milano"
 repository-code: "https://github.com/dutykh/ASafeGravity"
 license: GPL-3.0-only
-version: 1.0.0
-date-released: "2026-11-14"
+version: 1.1.0
+date-released: "2026-11-15"
 keywords:
   - general-relativity
   - black-holes
@@ -28,12 +28,16 @@ keywords:
   - spectral-methods
   - chebyshev-polynomials
   - maple
+  - matlab
+  - python
 abstract: >-
   Maple worksheets and procedures, with the computed spectra, for the quasinormal modes of scalar, electromagnetic and
   gravitational perturbations of black holes improved by a running Newton coupling: Planck stars, Bonanno–Reuter black
   holes and Hayward black holes, from the Schwarzschild limit to extremality. A Chebyshev collocation of the
   compactified radial equation in multiprecision arithmetic gives a quadratic eigenvalue problem, whose converged
-  eigenvalues are listed in 186 reports.
+  eigenvalues are listed in 186 reports. For the Hayward black holes the whole chain is included: the Maple assembly of
+  the matrices, the MATLAB script that solves the eigenvalue problem with the Advanpix toolbox and writes the reports,
+  and the Python driver that runs both for every set of parameters.
 preferred-citation:
   type: article
   title: Spectral Analysis of Quasinormal Modes of Planck Stars
